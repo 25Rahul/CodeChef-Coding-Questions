@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	while(n--){
+	    int x,y,z;
+	    cin>>x>>y>>z;
+	    int a = (x-y);
+	    int b = (x-a)*3;
+	    int c = b-a;
+	    if(c>=z){
+	        cout<<"PASS"<<endl;
+	    }
+	    else{
+	        cout<<"FAIL"<<endl;
+	    }
+	}
+	return 0;
+}
