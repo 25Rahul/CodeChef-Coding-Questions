@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	while(n--){
+	    int x,y;
+	    int count=0;
+	    cin>>x>>y;
+	    for(int i=x;i<=y;i++){
+	        if(i%10 == 2 || i%10 == 3 || i%10 == 9){
+	            count++;
+	        }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
