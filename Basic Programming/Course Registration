@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	while(n--){
+	    int x,y,z;
+	    cin>>x>>y>>z;
+	    int c = x+z;
+	    if(c<=y){
+	        cout<<"Yes"<<endl;
+	    }
+	    else{
+	        cout<<"No"<<endl;
+	    }
+	}
+	return 0;
+}
