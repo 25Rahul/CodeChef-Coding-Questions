@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	while(n--){
+	    int x,y;
+	    cin>>x>>y;
+	    if(x>=y){
+	    int c=x-y;
+	    cout<<c<<endl;}
+	    else{
+	        int d=y-x;
+	        cout<<d<<endl;
+	    }
+	    
+	}
+	return 0;
+}
