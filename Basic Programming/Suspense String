@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	 int t;
+	 cin>>t;
+	 while(t--){
+	     int n;
+	     cin>>n;
+	     string s;
+	     cin>>s;
+	     
+	     string t = "";
+	     int fl =1;
+	     while(s.length()!=0){
+	         
+	         if(fl==1){
+	             char c  =  s[0] ;
+	             s.erase(s.begin());
+	             
+	             if(c=='0') t.insert(0,"0");
+	             else t.append("1");
+	             fl =0;
+	         }else{
+	             char c  =  s[s.length()-1] ;
+	              s.pop_back();
+	            
+	             if(c=='0') t.append("0");
+	             else t.insert(0,"1");
+	             fl =1;
+	             
+	         }
+	         
+	        
+	     }
+	      cout << t << "\n";
+	     
+	 }
+	return 0;
+}
