@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int k;
+	cin>>k;
+	while(k--){
+	    int n,a,b,c;
+	    cin>>n>>a>>b>>c;
+	    if((a+c)>=n&&b>=n){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
