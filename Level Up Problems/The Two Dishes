@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,s,diff=0;
+	    cin>>n>>s;
+	
+	    if(n>=s){
+	        diff = s;
+	    }
+	    else{
+	        // t1 = n & t2= s-n
+	        diff = n - (s-n); 
+	    }
+	    cout<<diff<<endl;
+	}
+	return 0;
+}
