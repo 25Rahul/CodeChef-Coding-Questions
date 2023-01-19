@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	while(n--){
+	 int x,y,z;
+	 cin>>x>>y>>z;
+	 if(x>=y && z>=x){
+	     cout<<"Take second dose now"<<endl;
+	 }
+	 else if(z<x){
+	     cout<<"Too Late"<<endl;
+	 }
+	 else if(y>x){
+	     cout<<"Too Early"<<endl;
+	 }
+	}
+	return 0;
+}
